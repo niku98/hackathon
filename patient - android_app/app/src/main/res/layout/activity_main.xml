@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/colorMain">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/doctor"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#00000000"
+            app:civ_circle_background_color="@color/colorWhite"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:text="00"
+            android:textSize="15dp"
+            android:id="@+id/tv_hello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:text="00"
+            android:textSize="60dp"
+            android:id="@+id/tv_queue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns = "1,2">
+            <TableRow>
+                <Button
+                    android:id="@+id/btn_profile"
+                    android:drawableTop="@drawable/profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_column="1"
+                    android:text="Hồ Sơ"
+                    android:padding="20dip"/>
+                <Button
+                    android:id="@+id/btn_kham"
+                    android:drawableTop="@drawable/khambenh"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_column="1"
+                    android:text="Khám bệnh"
+                    android:padding="20dip"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/btn_booking"
+                    android:drawableTop="@drawable/calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_column="1"
+                    android:text="Đặt lịch"
+                    android:padding="3dip"/>
+                <Button
+                    android:id="@+id/btn_payment"
+                    android:drawableTop="@drawable/payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_column="1"
+                    android:text="Thanh toán"
+                    android:padding="3dip"/>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:background="@color/colorMain"
+            style="@style/headerText"
+            android:text="Thông tin của bạn"
+            android:layout_marginBottom="20dp"/>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/dobImageView"
+                android:src="@drawable/ic_id"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="ID"
+                android:layout_toRightOf="@id/dobImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:text="1234"
+                android:layout_toRightOf="@id/dobImageView"
+                android:id="@+id/tv_id"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/nameImageView"
+                android:src="@drawable/ic_name"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:text="Tên"
+                android:layout_toRightOf="@id/nameImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:text="developer"
+                android:layout_toRightOf="@id/nameImageView"
+                android:id="@+id/tv_name"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/mobileImageView"
+                android:src="@drawable/ic_mobile"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Số điện thoại"
+                android:layout_toRightOf="@id/mobileImageView"
+                style="@style/profileDetailsTextMain"/>
+
+            <TextView
+                android:text="08129999999"
+                android:layout_toRightOf="@id/mobileImageView"
+                android:id="@+id/tv_phone"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/addressImageView"
+                android:src="@drawable/ic_address"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Địa chỉ"
+                android:layout_toRightOf="@id/addressImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:text="Avenue 2nd Street NW SY."
+                android:layout_toRightOf="@id/addressImageView"
+                android:id="@+id/tv_address"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+    </LinearLayout>
+
+</ScrollView>
